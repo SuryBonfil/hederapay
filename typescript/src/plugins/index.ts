@@ -1,0 +1,69 @@
+import { coreTokenPlugin, coreTokenPluginToolNames } from './core-token-plugin';
+import { coreAccountPlugin, coreAccountPluginToolNames } from './core-account-plugin';
+import { coreConsensusPlugin, coreConsensusPluginToolNames } from './core-consensus-plugin';
+import { coreQueriesPlugin, coreQueriesPluginToolNames } from './core-queries-plugin';
+import { coreMiscQueriesPluginsToolNames, coreMiscQueriesPlugin } from './core-misc-query-plugin';
+import { coreEVMPlugin, coreEVMPluginToolNames } from './core-evm-plugin';
+import {
+  coreAccountQueryPlugin,
+  coreAccountQueryPluginToolNames,
+} from './core-account-query-plugin';
+import { coreTokenQueryPlugin, coreTokenQueryPluginToolNames } from './core-token-query-plugin';
+import {
+  coreConsensusQueryPlugin,
+  coreConsensusQueryPluginToolNames,
+} from './core-consensus-query-plugin';
+import { coreEVMQueryPlugin, coreEVMQueryPluginToolNames } from './core-evm-query-plugin';
+import {
+  coreTransactionQueryPlugin,
+  coreTransactionQueryPluginToolNames,
+} from './core-transactions-query-plugin';
+import { p2pPlugin, p2pPluginToolNames } from './p2p-plugin';
+
+export {
+  coreTokenPlugin,
+  coreAccountPlugin,
+  coreConsensusPlugin,
+  coreMiscQueriesPlugin,
+  coreQueriesPlugin,
+  coreTokenPluginToolNames,
+  coreAccountPluginToolNames,
+  coreConsensusPluginToolNames,
+  coreQueriesPluginToolNames,
+  coreEVMPlugin,
+  coreEVMPluginToolNames,
+  coreAccountQueryPlugin,
+  coreTokenQueryPlugin,
+  coreConsensusQueryPlugin,
+  coreAccountQueryPluginToolNames,
+  coreTokenQueryPluginToolNames,
+  coreConsensusQueryPluginToolNames,
+  coreEVMQueryPlugin,
+  coreEVMQueryPluginToolNames,
+  coreTransactionQueryPlugin,
+  coreTransactionQueryPluginToolNames,
+  coreMiscQueriesPluginsToolNames,
+  p2pPlugin,
+  p2pPluginToolNames,
+};
+
+// Deprecated exports for backward compatibility
+/**
+ * @deprecated Use coreTokenPlugin instead. This export will be removed in a future version.
+ */
+export const coreHTSPlugin = coreTokenPlugin;
+
+/**
+ * @deprecated Use coreTokenPluginToolNames instead. This export will be removed in a future version.
+ */
+export const coreHTSPluginToolNames = coreTokenPluginToolNames;
+
+/**
+ * @deprecated Use coreEVMPlugin instead. This export will be removed in a future version.
+ */
+export const coreSCSPlugin = coreEVMPlugin;
+
+/**
+ * @deprecated Use coreEVMPluginToolNames instead. This export will be removed in a future version.
+ */
+export const coreSCSPluginToolNames = coreEVMPluginToolNames;
